@@ -18,10 +18,10 @@ namespace Gaming{
 
     //**************************************************
 
-    void Simple::print(std::ostream &os) const {
+    void Strategic::print(std::ostream &os) const {
         std::stringstream ss;
 
-        ss << SIMPLE_ID << Simple::__id;        //Simple ID will print out and then the actual ID
+        ss << STRATEGIC_ID << Strategic::__id;        //Simple ID will print out and then the actual ID
         os << ss.str();
     }
 
@@ -30,5 +30,6 @@ namespace Gaming{
     ActionType Strategic::takeTurn(const Surroundings &s) const {
         return (*__strategy)(s);
     }
+
 }
 
