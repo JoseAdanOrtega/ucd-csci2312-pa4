@@ -24,6 +24,7 @@ namespace Gaming{
     void Advantage::print(std::ostream &os) const {
         std::stringstream ss;
         std::string temp;
+
         ss << ADVANTAGE_ID << __id;     //Passes ADVANTAGE_ID to a string stream
         getline(ss, temp);              //Passes the string stream in to the string
         os << temp;                     //Outputs it to the ostream
